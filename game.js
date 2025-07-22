@@ -18,7 +18,8 @@ for(let i=0; i<emoji.length; i++){
       document.querySelectorAll('.boxOpen')[0].classList.remove('boxOpen')
     
     if(document.querySelectorAll('.boxMatch').length==emojis.length){
-      alert ('Congratulations')
+      document.getElementById('congratsMsg').style.display = 'block';
+
   }
 } else{
       document.querySelectorAll('.boxOpen')[1].classList.remove('boxOpen')
