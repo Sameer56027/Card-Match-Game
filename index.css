@@ -5,6 +5,9 @@ body{
     align-items: center;
     height: 100vh;
     margin: 0;
+    font-family: monospace;
+    padding: 20px;
+
    
 }
 
@@ -21,7 +24,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 75vh;
-    margin: 0;
+    margin-top: 30px;
     font-size: 1rem;
     font-family: monospace;
 }
@@ -32,6 +35,7 @@ body{
     width: 150px;
     font-size: 1rem;
     font-family: monospace;
+    cursor: pointer;
 }
 
 .cardmatchgame{
@@ -45,6 +49,7 @@ body{
      1px -1px 0 #000,
     -1px  1px 0 #000,
      1px  1px 0 #000;;
+     margin-bottom: 10px;
   
 }
 .instructions{
@@ -55,4 +60,100 @@ body{
     color: black;
     margin-left: 25px;
     margin-right: 20px;  
+    
 }
+
+@media (max-width: 680px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding: 10px;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 350px;
+        padding: 15px;
+        height: 60%;
+
+    }
+
+    .cardmatchgame {
+        font-size: 1.6rem;
+    }
+
+    .instructions {
+        font-size: 1rem;
+    }
+
+    .start-button {
+        width: 130px;
+        height: 35px;
+        font-size: 0.9rem;
+        margin-top: -100px;
+    }
+}
+
+/* Tablet Portrait: 820x1180 */
+@media (min-width: 768px) and (max-width: 1271px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        height: 100vh;
+    }
+
+    .container {
+        width: 500px;
+        padding: 25px;
+    }
+
+    .cardmatchgame {
+        font-size: 2.3rem;
+    }
+
+    .instructions {
+        font-size: 1.2rem;
+    }
+
+    .start-button {
+        width: 160px;
+        height: 45px;
+        font-size: 1rem;
+        margin-top: -520px;
+    }
+}
+
+/*@media (min-width: 681px) and (max-width: 767px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        height: 100vh;
+    }
+
+    .container {
+        width: 500px;
+        padding: 25px;
+    }
+
+    .cardmatchgame {
+        font-size: 2.3rem;
+    }
+
+    .instructions {
+        font-size: 1.2rem;
+    }
+
+    .start-button {
+        width: 160px;
+        height: 45px;
+        font-size: 1rem;
+        margin-top: -520px;
+    }
+}
+*/
